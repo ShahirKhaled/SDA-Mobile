@@ -1,0 +1,67 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Raleway, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    color: white;
+    background-color: #020814;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header, footer>div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-block: 3rem;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+}
+
+.logo {
+    color: #f0ad74;
+    font-size: 2rem;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 5rem;
+}
+
+#hero-container {
+    background-image: url('hero.jpg');
+    min-height: 90vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-container>.greeting {
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+section:not(#hero-container), footer {
+    margin-inline: 5rem;
+}
+
+footer>p {
+    text-align: center;
+}
